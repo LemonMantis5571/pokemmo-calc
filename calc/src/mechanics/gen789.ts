@@ -1023,7 +1023,7 @@ export function calculateBPModsSMSSSV(
   ) {
     move.target = 'allAdjacentFoes';
     move.type = 'Stellar';
-  } else if ((move.named('Knock Off') && !resistedKnockOffDamage) ||
+  } else if (
     (move.named('Misty Explosion') && isGrounded(attacker, field) && field.hasTerrain('Misty')) ||
     (move.named('Grav Apple') && field.isGravity)
   ) {
